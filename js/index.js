@@ -50,12 +50,11 @@ function removeProduct(event) {
 
 // ITERATION 5
 
-function createProduct2() {
+function createProduct() {
   let productName = document.querySelector('#newProduct');
   let productPrice = document.querySelector('#newPrice');
 
   const addProduct = document.getElementById('tbody');
-
   addProduct.innerHTML += `
   <tr class="product">
   <td class="name">
@@ -87,5 +86,5 @@ window.addEventListener('load', () => {
   // Button Code
 
   const addButton = document.getElementById('create');
-  addButton.addEventListener('click', createProduct2);
+  addButton.addEventListener('click', createProduct);
 });
